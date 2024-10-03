@@ -1,6 +1,5 @@
-# GetYourPhone
+# Project Name: Get Your Phone
 
-# Project Name
 
 ## Overview
 This project is built using ASP.NET Core MVC with Dapper for data access and SQL Server as the database.
