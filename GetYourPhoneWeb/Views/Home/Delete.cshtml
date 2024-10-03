@@ -1,0 +1,66 @@
+﻿@model GetYourPhoneWeb.Models.Product
+
+@{
+    ViewData["Title"] = "Delete Product";
+
+}
+
+<div class="card shadow border-0 my-4">
+
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Delete Product</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-body p-4">
+
+        <form method="post" class="row">
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="border p-3">
+
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="@Model.Name" class="form-control border-0 shadow" disabled />
+                            <label asp-for="@Model.Name" class="ms-2"></label>
+                        </div>
+
+                        <div class="py-2 col-12">
+                            <textarea asp-for="@Model.Description" class="form-control border-0 shadow" disabled ></textarea>
+                            <label asp-for="@Model.Description" class="ms-2"></label>
+                        </div>
+
+                        <div class="form-floating py-2 col-12">
+                            <input asp-for="@Model.Price" class="form-control border-0 shadow" disabled />
+                            <label asp-for="@Model.Price" class="ms-2"></label>
+                        </div>
+
+                        <div class="row pt-3">
+                            <div class="col-6 col-md-3">
+                                <button type="submit" class="btn btn-danger form-control">
+                                    <i class="bi bi-trash-fill"></i> Delete
+                                </button>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <a asp-controller="Home" asp-action="Index" class="btn btn-secondary border form-control">
+                                    Back To List
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
