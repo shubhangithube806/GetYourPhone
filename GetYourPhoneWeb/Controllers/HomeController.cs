@@ -24,7 +24,7 @@ namespace GetYourPhoneWeb.Controllers
 
         public IActionResult Index()
         {
-            string query = "SELECT * FROM Product;";
+            string query = "SELECT * FROM Product ORDER BY CreatedOn;";
             IEnumerable<Product> productList = conn.Query<Product>(query);
 
             return View(productList);
